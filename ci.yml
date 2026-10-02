@@ -1,0 +1,14 @@
+name: Basic Ci 
+on:
+  push:
+  jobs:
+    check:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: run tests
+          run: |
+            echo "running tests"
+            pwd
+            ls -la
+            df -h
