@@ -1,7 +1,8 @@
 name: Basic Ci 
 on:
   push:
-  jobs:
+   
+jobs:
     check:
       runs-on: ubuntu-latest
       steps:
